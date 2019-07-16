@@ -1,0 +1,248 @@
+header {
+  height: 30px;
+  background: #76dac6;
+}
+
+nav {
+  position: fixed;
+  left: 20%;
+  font-family: "Montserrat";
+  font-size: 30px;
+  height: 70px;
+  background: #76dac6;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#navbar {
+  overflow: hidden;
+  background: #76dac6;
+}
+
+nav ul {
+  margin-right: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.splash {
+  background: url(../../SweetMama/Images/splash.jpg) no-repeat center center
+    fixed;
+  width: 100%;
+  background-size: cover;
+  height: 95vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.pic {
+  font-size: inherit;
+  height: auto;
+  width: auto;
+  display: inline-block;
+}
+.grow:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.h2 {
+  font-family: "Montserrat";
+}
+
+.Paquetes {
+  font-family: "Montserrat";
+  color: whitesmoke;
+  background-color: #3dc7ac;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.card .btn {
+  float: right;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f5de47;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  -webkit-text-stroke: 2px black;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.espacio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+  background-color: #f5de47;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  text-align: center;
+  background-color: #f5de47;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: "VER MAS TRABAJOS";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "VER MENOS";
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 40px;
+  text-align: center;
+  background-color: #f5de47;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.read-more-state ~ .read-more-wrap img {
+  display: none;
+}
+
+.read-more-state:checked ~ .read-more-wrap img {
+  display: block;
+}
+
+.form-group {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contacto {
+  width: 50%;
+  margin: 0 auto;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
