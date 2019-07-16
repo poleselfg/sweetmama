@@ -12,15 +12,17 @@
   </head>
   <body>
     <header>
-            <nav>
+        <div id="navbar">
+            <nav class="sticky">
                     <ul>
                       <li><a href="#trabajos">Nuestros Trabajos</a></li>
-                      <li><a href="servicios">Paquetes de Servicios</a></li>
-                      <li><a href="contacto">Contacto</a></li>
-                      <li><a href="blog">Nuestro Blog</a></li>
+                      <li><a href="#servicios">Paquetes de Servicios</a></li>
+                      <li><a href="#contacto">Contacto</a></li>
+                      <li><a href="#blog">Nuestro Blog</a></li>
+                      <li><i class="fas fa-shopping-cart"></i></li>
                     </ul>
                   </nav>
-            
+                </div>
             </header>
     <section class="splash">
         <div class="container">
@@ -263,7 +265,7 @@
 <div>
 <br>
 </div>
-        <div class="row">
+    <div class="row">
           <div class="column">
             <form action="/action_page.php">
               <label for="fname">NOMBRES</label>
@@ -271,7 +273,7 @@
               <label for="lname">EMAIL</label>
               <input type="text" id="lname" name="lastname" placeholder="tu email aqui...">
               <label for="subject">MENSAJE</label>
-              <textarea id="subject" name="subject" placeholder="escribe aqui....." style="height:170px"></textarea>
+              <textarea id="subject" name="subject" placeholder="escribe aqui....." style="height:140px"></textarea>
               <input type="submit" value="Submit">
             </form>
           </div>
@@ -323,7 +325,8 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-}</script>
+}
+</script>
       </body>
     
 </html>

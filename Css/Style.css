@@ -1,16 +1,15 @@
 header {
-  height: 30px;
+  height: 20px;
   background: #76dac6;
 }
 
 nav {
   position: fixed;
-  left: 20%;
   font-family: "Montserrat";
-  font-size: 30px;
+  font-size: 20px;
   height: 70px;
-  background: #76dac6;
-  display: inline-block;
+  background-color: #3dc7ac;
+  float: left;
   text-decoration: none;
 }
 
@@ -20,6 +19,7 @@ nav {
 }
 
 nav ul {
+  float: right;
   margin-right: 20px;
   padding: 20px;
   text-transform: uppercase;
@@ -28,6 +28,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   text-decoration: none;
+  color: white;
 }
 a {
   text-decoration: none;
@@ -70,6 +71,7 @@ nav ul li a {
 
 .h2 {
   font-family: "Montserrat";
+  display: inline-block;
 }
 
 .Paquetes {
@@ -80,17 +82,7 @@ nav ul li a {
   padding: 10px;
 }
 
-.card {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
-}
-
-.card .btn {
-  float: right;
-}
-
 .button {
-  display: inline-block;
   border-radius: 4px;
   background-color: #f5de47;
   border: none;
@@ -102,6 +94,7 @@ nav ul li a {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  float: right;
 }
 
 .button span {
