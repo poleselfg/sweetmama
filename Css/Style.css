@@ -5,7 +5,8 @@ header {
 
 nav {
   position: fixed;
-  font-family: "Montserrat";
+  font-family: "Montserrat semibold";
+  z-index: 1001;
   font-size: 20px;
   height: 70px;
   background-color: #3dc7ac;
@@ -14,8 +15,10 @@ nav {
 }
 
 #navbar {
+  z-index: 1001;
   overflow: hidden;
   background: #76dac6;
+  text-decoration: none;
 }
 
 nav ul {
@@ -23,6 +26,7 @@ nav ul {
   margin-right: 20px;
   padding: 20px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 nav ul li {
@@ -64,9 +68,14 @@ nav ul li a {
   display: inline-block;
 }
 .grow:hover {
-  -webkit-transform: scale(1.03);
+  -webkit-transform: scale(1.04);
   -ms-transform: scale(1.03);
   transform: scale(1.03);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .h2 {
@@ -75,11 +84,12 @@ nav ul li a {
 }
 
 .Paquetes {
-  font-family: "Montserrat";
+  font-family: "Montserrat semibold";
+  letter-spacing: 8px;
   color: whitesmoke;
   background-color: #3dc7ac;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 
 .button {
@@ -152,17 +162,19 @@ nav ul li a {
 }
 
 .read-more-state ~ .read-more-trigger:before {
-  content: "VER MAS TRABAJOS";
+  content: " ▼ VER MAS TRABAJOS ▼";
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: "VER MENOS";
+  content: "▲ VER MENOS ▲";
 }
 
 .read-more-trigger {
+  font-family: "Montserrat semibold";
+  letter-spacing: 8px;
   cursor: pointer;
   color: whitesmoke;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   background-color: #f5de47;
   display: block;
@@ -238,4 +250,16 @@ input[type="submit"]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+.montserrat {
+  font-family: "montserrat";
+}
+
+.contacto p {
+  font-family: "montserrat";
+}
+
+a {
+  text-decoration: none;
 }

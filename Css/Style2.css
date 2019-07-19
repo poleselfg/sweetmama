@@ -5,7 +5,7 @@ header {
 
 nav {
   position: fixed;
-  font-family: "Montserrat";
+  font-family: "Montserrat semibold";
   font-size: 20px;
   height: 70px;
   background-color: #3dc7ac;
@@ -83,7 +83,15 @@ a:hover {
 }
 
 .texto p {
+  font-family: "montserrat";
   margin-left: auto;
   margin-right: auto;
-  width: 64em;
+  width: 80em;
+}
+
+.texto h3 {
+  font-family: "montserrat semibold";
+  margin-left: auto;
+  margin-right: auto;
+  width: 46em;
 }

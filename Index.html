@@ -33,7 +33,7 @@
         </div>
     </div>
     </section>
-    <a name="trabajos" id="trabajos"></a> <h1 class="Paquetes"> NUESTROS TRABAJOS  </h1>
+    <a name="trabajos" id="trabajos"></a> <h3 class="Paquetes"> NUESTROS TRABAJOS  </h3>
 
     <section>
     <div class="row">
@@ -124,7 +124,7 @@
     </section>
 </span></div>
 <label for="post-1" class="read-more-trigger paquetes"></label>
-<a name="servicios" id="servicios"></a> <h1 class="Paquetes"> PAQUETES DE SERVICIOS </h1>
+<a name="servicios" id="servicios"></a> <h3 class="Paquetes"> PAQUETES DE SERVICIOS </h3>
     <section class="descripcion">
         <div class="container">
 
@@ -256,25 +256,25 @@
         </div>
     </section>
     <br>
-    <a name="contacto" id="contacto"></a> <h1 class="Paquetes">  CONTACTO </h1>
+    <a name="contacto" id="contacto"></a> <h3 class="Paquetes">  CONTACTO </h3>
 <div class="contacto">
    <br>
-    <h3 class="h2"><i class="fas fa-phone-volume"></i> +54 9 011 15489657</h3>
+    <h3 class="h3"><i class="fas fa-phone-volume"></i> +54 9 011 15489657</h3>
     
     <br>
-    <h3 class="h2"><i class="fas fa-envelope-open-text"></i> contacto@sweetmama.com</h3>
-<div>
-<br>
-</div>
+    <h3 class="h3"><i class="fas fa-envelope-open-text"></i> contacto@sweetmama.com</h3>
+    <br><br>
+    <p>Escribinos y nos contactaremos a la brevedad</p>
+
     <div class="row">
-          <div class="column">
+          <div class="column Montserrat">
             <form action="/action_page.php">
-              <label for="fname">NOMBRES</label>
-              <input type="text" id="fname" name="firstname" placeholder="tus nombres aqui....">
-              <label for="lname">EMAIL</label>
-              <input type="text" id="lname" name="lastname" placeholder="tu email aqui...">
-              <label for="subject">MENSAJE</label>
-              <textarea id="subject" name="subject" placeholder="escribe aqui....." style="height:140px"></textarea>
+              <label for="fname"></label>
+              <input type="text" id="fname" name="firstname" placeholder="NOMBRES">
+              <label for="lname"></label>
+              <input type="text" id="lname" name="lastname" placeholder="EMAIL">
+              <label for="subject"></label>
+              <textarea id="subject" name="subject" placeholder="MENSAJE" style="height:140px"></textarea>
               <input type="submit" value="Submit">
             </form>
           </div>
@@ -282,44 +282,42 @@
       </div>
 
 <br>
-    <a name="blog" id="blog"></a>  <h1 class="Paquetes"> NUESTRO BLOG </h1>
+    <a name="blog" id="blog"></a>  <h3 class="Paquetes"> NUESTRO BLOG </h3>
 </div>
 <section>
     <div class="row">
         <div class="col-md-3-offset-0">
-            <div class="pic"><img src="../SweetMama/Images/BLOG1.jpg" class="img-responsive" alt="img1"></div>
+            <a href="../SweetMama/blog.html"><div class="pic"><img src="../SweetMama/Images/BLOG1.jpg" class="img-responsive" alt="img1"></div></a>
         </div>
         <div class="col-md-3-offset-0">
-            <div class="pic"><img src="../SweetMama/Images/BLOG2.jpg" class="img-responsive" alt="img2"></div>  
+                <a href="../SweetMama/blog.html"><div class="pic"><img src="../SweetMama/Images/BLOG2.jpg" class="img-responsive" alt="img2"></div></a>  
         </div>
         <div class="col-md-3-offset-0">
-            <div class="pic"><img src="../SweetMama/Images/BLOG3.jpg" class="img-responsive" alt="img3"></div>  
+                <a href="../SweetMama/blog.html"><div class="pic"><img src="../SweetMama/Images/BLOG3.jpg" class="img-responsive" alt="img3"></div></a>  
     </div>
   </section>
   <br>
   <section>
     <div class="row">
         <div class="col-md-3-offset-0">
-            <div class="pic"><img src="../SweetMama/Images/BLOG1.jpg" class="img-responsive" alt="img1"></div>
+                <a href="../SweetMama/blog.html"><div class="pic"><img src="../SweetMama/Images/BLOG1.jpg" class="img-responsive" alt="img1"></div></a>
         </div>
         <div class="col-md-3-offset-0">
-            <div class="pic"><img src="../SweetMama/Images/BLOG2.jpg" class="img-responsive" alt="img2"></div>  
+                <a href="../SweetMama/blog.html"> <div class="pic"><img src="../SweetMama/Images/BLOG2.jpg" class="img-responsive" alt="img2"></div></a>  
         </div>
         <div class="col-md-3-offset-0">
-            <div class="pic"><img src="../SweetMama/Images/BLOG3.jpg" class="img-responsive" alt="img3"></div>  
+                <a href="../SweetMama/blog.html"><div class="pic"><img src="../SweetMama/Images/BLOG3.jpg" class="img-responsive" alt="img3"></div></a>  
     </div>
   </section>
   <script>
-  // When the user scrolls the page, execute myFunction 
+
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
 var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
+
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
