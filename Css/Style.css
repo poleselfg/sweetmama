@@ -260,6 +260,13 @@ input[type="submit"]:hover {
   font-family: "montserrat";
 }
 
-a {
-  text-decoration: none;
+.center {
+  width: 100%;
+  font-family: "montserrat";
+  margin: 25%;
+}
+
+.margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
