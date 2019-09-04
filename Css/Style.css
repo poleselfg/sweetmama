@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 header {
   height: 20px;
   background: #76dac6;
@@ -34,9 +39,11 @@ nav ul li {
   text-decoration: none;
   color: white;
 }
+
 a {
   text-decoration: none;
 }
+
 nav ul li a {
   padding: 10px;
   color: white;
@@ -47,26 +54,22 @@ nav ul li a {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 .splash {
-  background: url(../../SweetMama/Images/splash.jpg) no-repeat center center
-    fixed;
-  width: 100%;
-  background-size: cover;
-  height: 95vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  margin: 0;
+  width: 100vw;
+  height: auto;
 }
 
 .pic {
   font-size: inherit;
   height: auto;
-  width: auto;
-  display: inline-block;
+  width: 100%;
+
 }
+
 .grow:hover {
   -webkit-transform: scale(1.04);
   -ms-transform: scale(1.03);
@@ -153,7 +156,7 @@ nav ul li a {
   margin-right: auto;
 }
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
+.read-more-state:checked~.read-more-wrap .read-more-target {
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
@@ -161,11 +164,11 @@ nav ul li a {
   background-color: #f5de47;
 }
 
-.read-more-state ~ .read-more-trigger:before {
+.read-more-state~.read-more-trigger:before {
   content: " ▼ VER MAS TRABAJOS ▼";
 }
 
-.read-more-state:checked ~ .read-more-trigger:before {
+.read-more-state:checked~.read-more-trigger:before {
   content: "▲ VER MENOS ▲";
 }
 
@@ -182,11 +185,11 @@ nav ul li a {
   margin-right: auto;
 }
 
-.read-more-state ~ .read-more-wrap img {
+.read-more-state~.read-more-wrap img {
   display: none;
 }
 
-.read-more-state:checked ~ .read-more-wrap img {
+.read-more-state:checked~.read-more-wrap img {
   display: block;
 }
 
@@ -225,11 +228,8 @@ input[type="submit"]:hover {
   width: 50%;
   margin: 0 auto;
 }
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
+
+
 
 .column {
   float: left;
@@ -245,6 +245,7 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+
   .column,
   input[type="submit"] {
     width: 100%;
