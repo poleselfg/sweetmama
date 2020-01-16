@@ -1,57 +1,49 @@
 body {
-  padding: 0;
-  margin: 0;
+  max-width: 100vw;
 }
 
-header {
-  height: 20px;
-  background: #76dac6;
-}
-
-nav {
-  position: fixed;
-  font-family: "Montserrat semibold";
-  z-index: 1001;
-  font-size: 20px;
-  height: 70px;
-  background-color: #3dc7ac;
-  float: left;
+body nav div ul li a:hover {
   text-decoration: none;
+  font-size: 4vh
 }
 
-#navbar {
-  z-index: 1001;
-  overflow: hidden;
-  background: #76dac6;
-  text-decoration: none;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-  padding: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 nav ul li {
-  display: inline-block;
+  font-size: 1.5vw;
+  font-family: "Montserrat""bold";
+}
+
+.navbar {
+  background: #6eefd5;
+  font-family: "Montserrat""bold";
+}
+
+.act {
   text-decoration: none;
+  padding: 5px 5px;
   color: white;
+  font-family: "Montserrat""semibold";
 }
 
-a {
-  text-decoration: none;
+.fit-image {
+  width: 100%;
+  object-fit: cover;
 }
 
-nav ul li a {
-  padding: 10px;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
+.fit-image2 {
+  width: 100%;
+  object-fit: cover;
 }
 
-.sticky {
+.logo {
+  width: 8vw;
+}
+
+.row .sticky {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -63,14 +55,9 @@ nav ul li a {
   height: auto;
 }
 
-.pic {
-  font-size: inherit;
-  height: auto;
-  width: 100%;
 
-}
 
-.grow:hover {
+.fit-image:hover {
   -webkit-transform: scale(1.04);
   -ms-transform: scale(1.03);
   transform: scale(1.03);
@@ -79,6 +66,8 @@ nav ul li a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  border-radius: 3px
 }
 
 .h2 {
@@ -87,7 +76,7 @@ nav ul li a {
 }
 
 .Paquetes {
-  font-family: "Montserrat semibold";
+  font-family: "Montserrat""semibold";
   letter-spacing: 8px;
   color: whitesmoke;
   background-color: #3dc7ac;
@@ -262,9 +251,12 @@ input[type="submit"]:hover {
 }
 
 .center {
+
+
+  display: block;
+  margin-left: 35%;
+  margin-right: auto;
   width: 100%;
-  font-family: "montserrat";
-  margin: 25%;
 }
 
 .margin {
